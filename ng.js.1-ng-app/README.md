@@ -1,0 +1,1 @@
+This file contains an introduction to angular js using ng-app .
