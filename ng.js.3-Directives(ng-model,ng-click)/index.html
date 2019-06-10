@@ -16,6 +16,7 @@
       <input type="search" placeholder="Enter username" ng-model="username"/>
       <input type="submit" value="search" ng-mouseover="search(username)"/>
       </form>
+      <p>{{error}}</p>
     <p>{{user.name}}</p>
     <p><img ng-src="{{user.avatar_url}}" title="{{user.name}}"></p>
   </body>
