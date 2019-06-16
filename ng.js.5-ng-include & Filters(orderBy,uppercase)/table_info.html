@@ -1,0 +1,25 @@
+   <div>
+     Order:
+     <select ng-model="repoSortOrder">
+       <option value="+name">Name(ascending)</option>
+       <option value="-name">Name(descending)</option>
+       <option value="+language">Language(ascending)</option>
+       <option value="-language">Language(descending)</option>
+     </select>
+    <table>
+      <thead>
+      <tr>
+        <th>Name of Repository</th>
+        <th>Description</th>
+        <th>Basic Language</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+        <td>*{{repo.name | uppercase}}</td>
+        <td>{{repo.description}}</td>
+        <td>{{repo.language}}</td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
